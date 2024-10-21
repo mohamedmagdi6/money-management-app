@@ -16,4 +16,9 @@ abstract class IconsAssets {
   static const String exportData = 'assets/images/upload.png';
   static const String logout = 'assets/images/logout.png';
   static const String edit = 'assets/images/Edit.png';
+  static const String downArrow = 'assets/images/Arrow.png';
+  static const String upArrow = 'assets/images/upArrow.png';
+  static const String upVector = 'assets/images/upVector.png';
+  static const String downVector = 'assets/images/downVector.png';
+  static const String moneySign = 'assets/images/moneySign.png';
 }

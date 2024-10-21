@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:money_management/core/routes/routes.dart';
+import 'package:money_management/features/home/home_screen.dart';
 import 'package:money_management/features/splash/splash_screen.dart';
 
 class RouteGenerator {
@@ -7,6 +8,8 @@ class RouteGenerator {
     switch (settings.name) {
       case Routes.spalashScreen:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
+      case Routes.homeScreen:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       default:
         return unDefinedRoute();
     }

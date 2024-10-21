@@ -5,6 +5,7 @@ import 'package:money_management/core/resources/color_manager.dart';
 import 'package:money_management/core/resources/constants_manager.dart';
 import 'package:money_management/core/resources/font_manager.dart';
 import 'package:money_management/core/resources/style_manager.dart';
+import 'package:money_management/core/routes/routes.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -34,7 +35,7 @@ class SplashScreen extends StatelessWidget {
           height: 69.w,
           child: Text(TextConstant.splashTitle,
               style: getBoldStyle(
-                  color: ColorManager.primaryDark, fontSize: FontSize.s30)),
+                  color: ColorManager.black, fontSize: FontSize.s30)),
         ),
         SizedBox(
           height: 32.h,
@@ -45,7 +46,7 @@ class SplashScreen extends StatelessWidget {
           child: Text(
             TextConstant.splashSubTitle,
             style: getRegularStyle(
-                color: ColorManager.primaryDark, fontSize: FontSize.s16),
+                color: ColorManager.black, fontSize: FontSize.s16),
           ),
         ),
         SizedBox(
@@ -53,17 +54,17 @@ class SplashScreen extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            // Navigator.push(context, MaterialPageRoute(
-            //   builder: (context) {
-            //     return HomeScreen();
-            //   },
-            // ));
+            Navigator.pushNamedAndRemoveUntil(
+              context,
+              Routes.homeScreen,
+              (route) => false,
+            );
           },
           child: Container(
             width: 194.h,
             height: 42.w,
             decoration: BoxDecoration(
-                color: ColorManager.primaryDark,
+                color: ColorManager.black,
                 borderRadius: BorderRadius.circular(5)),
             child: Center(
               child: Text(
