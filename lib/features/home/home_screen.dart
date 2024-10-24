@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:money_management/core/resources/assets_manager.dart';
 import 'package:money_management/core/resources/color_manager.dart';
+import 'package:money_management/core/routes/routes.dart';
+import 'package:money_management/features/add_transaction_screen.dart';
 import 'package:money_management/features/home/tabs/home_tab.dart';
 import 'package:money_management/features/home/tabs/profile_tab.dart';
 import 'package:money_management/features/home/tabs/statistics_tab.dart';
@@ -28,7 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, Routes.addTransactions);
+            },
             backgroundColor: ColorManager.primary,
             child: const Icon(
               Icons.add,
@@ -94,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<Widget> tabs = [
     const HomeTab(),
-    const TransactionTab(),
+    TransactionTab(),
     const StatisticsTab(),
     const ProfileTab()
   ];

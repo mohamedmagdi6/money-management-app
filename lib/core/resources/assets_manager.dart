@@ -21,4 +21,6 @@ abstract class IconsAssets {
   static const String upVector = 'assets/images/upVector.png';
   static const String downVector = 'assets/images/downVector.png';
   static const String moneySign = 'assets/images/moneySign.png';
+  static const String money = 'assets/images/money.png';
+  static const String transArrow = 'assets/images/transArrow.png';
 }

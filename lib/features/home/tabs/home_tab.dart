@@ -30,16 +30,16 @@ class HomeTab extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   children: [
-                    Row(
+                    const Row(
                       children: [
-                        const Text(
+                        Text(
                           'Recent Transaction',
                           style: TextStyle(
                             fontSize: 14,
                           ),
                         ),
-                        const Spacer(),
-                        const Text(
+                        Spacer(),
+                        Text(
                           'View All',
                           style: TextStyle(
                             fontSize: 14,
@@ -47,7 +47,7 @@ class HomeTab extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     SizedBox(
@@ -73,7 +73,7 @@ class HomeTab extends StatelessWidget {
                                     CircleAvatar(
                                       backgroundColor: ColorManager.green,
                                       child: ImageIcon(
-                                        AssetImage(IconsAssets.upVector),
+                                        const AssetImage(IconsAssets.upVector),
                                         color: ColorManager.white,
                                       ),
                                     ),
@@ -81,7 +81,7 @@ class HomeTab extends StatelessWidget {
                                       width: 10.w,
                                     ),
                                     ImageIcon(
-                                      AssetImage(IconsAssets.moneySign),
+                                      const AssetImage(IconsAssets.moneySign),
                                       color: ColorManager.black,
                                     ),
                                     Text(
@@ -90,7 +90,7 @@ class HomeTab extends StatelessWidget {
                                           fontSize: FontSize.s22,
                                           color: ColorManager.black),
                                     ),
-                                    Spacer(),
+                                    const Spacer(),
                                     Text(
                                       'Income',
                                       style: getRegularStyle(

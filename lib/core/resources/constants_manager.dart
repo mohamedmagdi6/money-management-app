@@ -14,6 +14,7 @@ class TextConstant {
   static const String viewAll = "View All";
   static const String home = "Home";
   static const String transaction = "Transaction";
+  static const String transactions = "Transactions";
   static const String statics = "Statics";
   static const String profile = "Profile";
   static const String addTransaction = "Add Transaction";
